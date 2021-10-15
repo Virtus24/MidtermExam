@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+<ion-title>Home</ion-title>
   </ion-toolbar>
+  <ion-item>
+    <ion-label>Date Today</ion-label>
+    <ion-datetime displayFormat="MM/DD/YY" placeholder="Select Date"></ion-datetime>
+  </ion-item>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header class="content">
+      <ion-card-subtitle color="dark">Hello</ion-card-subtitle>
+      <ion-card-title>Welcome!</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="content">
+      Playing jumbled words can help improve your child’s processing speed, so that they are able to problem solve and arrive at the correct answer, faster. This doesn’t just help with literacy, but also with other classroom tasks that require quick thinking, such as mental maths.
+      Word puzzles can help your child to practice the spelling rules they have learnt at school, while at the same time reinforcing those rules each time they are used.
+    </ion-card-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Education</ion-label>
+      <ion-button fill="outline" slot="end" href="education">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content class="card">
+      To learn more, click the view to go to education!
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+  <ion-card>
+    <ion-item href="login" class="ion-activated">
+      <ion-icon name="exit" slot="start"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-item>
+  </ion-card>
+
+
+
